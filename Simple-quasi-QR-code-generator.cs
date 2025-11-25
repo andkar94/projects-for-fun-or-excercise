@@ -1,14 +1,9 @@
-﻿using System.ComponentModel.Design;
-using System.Security.Cryptography;
-
-
 Random random = new Random();
 int z = 20;
 
 while (true)
 {
     Console.Clear();
-
     string[,] matrix = new string[z,z];
 
     for (int i = 0; i < matrix.GetLength(0)/1.5; i++)
@@ -18,8 +13,7 @@ while (true)
             int k = random.Next(0, z);
             int l = random.Next(0, z);
 
-            matrix[k, l] = "o";
-                          
+            matrix[k, l] = "o";                 
         }
     }
  
@@ -36,4 +30,3 @@ while (true)
     }
     Console.ReadKey();  
 }
-
