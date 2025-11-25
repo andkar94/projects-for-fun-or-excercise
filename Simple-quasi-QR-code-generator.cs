@@ -27,7 +27,7 @@ while (true)
     { 
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            string el = (matrix[i, j];
+            string el = (matrix[i, j]);
             if (el==null)
                 el = " ";
             Console.Write(el + " ");           
